@@ -1,0 +1,6 @@
+---
+
+snmpd_dependencies:
+
+snmpd_install:
+  - snmpd

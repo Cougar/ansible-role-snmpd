@@ -1,5 +1,8 @@
 ---
 # tasks file for snmpd
+- name: include os specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
 - name: install dependencies
   apt:
     name: "{{ item }}"
